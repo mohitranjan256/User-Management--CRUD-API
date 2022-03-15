@@ -16,7 +16,7 @@ Backened Server :
 **Database:** MongoDB
 
 
-## Run Locally
+## Run
 
 Clone the project
 
