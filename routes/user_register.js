@@ -2,7 +2,9 @@ const express=require('express');
 const router=express.Router();
 const user = require('../model/user')
 router.post('/register' , async(req,res) =>{
-
+    if(!req.body){
+        res.status(400).send({message : "Content can't be empty.."})
+    }
     try{
         const username = req.body.username
         const Name = req.body.Name
