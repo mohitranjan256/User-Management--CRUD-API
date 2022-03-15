@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const user = require('../model/user')
-router.post('/update' , async(req,res) =>{
+router.get('/update' , async(req,res) =>{
 
     try{
         const username = req.body.username
