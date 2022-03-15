@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  },
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Web team Task 3",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+  },
+  "author": "Mohit Ranjan",
+  "license": "ISC"
+}
