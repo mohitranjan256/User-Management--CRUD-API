@@ -14,6 +14,8 @@ router.post('/register' , async(req,res) =>{
         const usercreate = await user.create({username : username , Name : Name , password : password ,phoneno : phoneno})
 
         res.json(usercreate);
+        console.log("User Register..");
+        console.log(usercreate);
     }
     catch(error){
         res.json({
