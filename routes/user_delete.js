@@ -9,6 +9,7 @@ router.get('/del',async(req,res) =>{
         let search = req.body.username
         let result = await user.deleteOne({username : search})
         res.json({result})
+        console.log("User Deleted..")
         
     }
     catch(error){
