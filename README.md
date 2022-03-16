@@ -2,10 +2,12 @@
 # USER-MANAGEMENT 
 
 Backened Server : 
- 1. Creating User Database 
- 2. Update User Details By username 
- 3. Get Details About User by username 
- 4. Delete User Details  username. 
+ 1. Upload a file
+ 2. Get list of all the files
+ 3. Download a file
+ 4. Update a file
+ 5. Delete a file
+ 
 
 
 ## Tech Stack
@@ -16,18 +18,18 @@ Backened Server :
 **Database:** MongoDB
 
 
-## Run
+## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/monster256/webteam-task-4.git
+  git clone https://github.com/monster256/webteam-task-3.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd webteam-task-4
+  cd webteam-task-3
 ```
 
 Install dependencies
