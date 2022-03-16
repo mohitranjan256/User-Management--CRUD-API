@@ -21,13 +21,13 @@ Backened Server :
 Clone the project
 
 ```bash
-  git clone https://github.com/monster256/webteam-task3.git
+  git clone https://github.com/monster256/webteam-task-4.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd webteam-task3
+  cd webteam-task-4
 ```
 
 Install dependencies
