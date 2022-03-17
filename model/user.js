@@ -13,11 +13,11 @@ const userschema = new schema ({
         type :String,
         required: true
     },
-    Password : {
+    password : {
         type : String,
         required: true
     },
-    Phoneno :{
+    phoneno :{
         type: Number,
         required: true
     }
