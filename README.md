@@ -49,7 +49,7 @@ Start the server
  ```  
 ## API Reference
 
-#### UPLOAD  FILES
+#### REGISTER A USER
 
 ```http
   POST /upload
@@ -74,7 +74,7 @@ Start the server
 | `password`      | `string` | **Required**. password of a Person for Update if not then leave it   |
 | `phoneno`      | `int` | **Required**. phoneno of Person for Update if not then leave it   |
 
-#### GET ALL FILES DETAILS
+#### GET ALL DETAILS ABOUT A USER
 
 ```http
   GET /getdetail/${username}
