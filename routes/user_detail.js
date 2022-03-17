@@ -15,12 +15,13 @@ router.get('/getall',async(req,res) =>{
 })
 
 
-router.get('/get',async(req,res) =>{
+router.get('/:username',async(req,res) =>{
 
     try{
-        let search = req.body.username
-        let result = await user.find({username : search})
+        let search = req.params.username
+        let result = await user.findById( search)
         res.json(result)
+        // console.log(result);
     }
     catch(error){
         res.json(error)
