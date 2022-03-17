@@ -1,9 +1,8 @@
 const mongoose=require('mongoose');
 
-const mongoURI="mongodb://localhost:27017/mohit?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
-
+const atlasURL =process.env.ATLAS_URL;
 const connectTOMongo=async()=>{
-    mongoose.connect(mongoURI,()=>{
+    mongoose.connect(atlasURL,()=>{
         console.log("Connected to MongoDB");
     })
 }
