@@ -1,6 +1,6 @@
 const { Timestamp } = require('mongodb')
 const mongoose = require('mongoose')
-const { required } = require('nodemon/lib/config')
+
 const schema = mongoose.Schema
 
 const userschema = new schema ({
@@ -13,11 +13,11 @@ const userschema = new schema ({
         type :String,
         required: true
     },
-    password : {
+    Password : {
         type : String,
         required: true
     },
-    phoneno :{
+    Phoneno :{
         type: Number,
         required: true
     }
