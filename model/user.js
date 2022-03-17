@@ -1,13 +1,15 @@
 const { Timestamp } = require('mongodb')
 const mongoose = require('mongoose')
-
+// const { required } = require('nodemon/lib/config')
 const schema = mongoose.Schema
 
 const userschema = new schema ({
 
     username :{
         type : String,
-        required: true
+        required: true,
+        unique: true
+        
     },
     Name :{
         type :String,
@@ -24,5 +26,5 @@ const userschema = new schema ({
     
 },{Timestamp : true})
 
-const user = mongoose.model('User',userschema)
-module.exports = user
+const User_Database = mongoose.model('User_Database',userschema)
+module.exports = User_Database
