@@ -1,13 +1,13 @@
 const dotenv = require('dotenv')
-dotenv.config()
+dotenv.config();
 const express =require('express');
-
+const PORT = process.env.PORT || 6000
 const mongoosetoconnect = require('./db')
 
 mongoosetoconnect();
 
 const app = express();
-const PORT = 6000;
+
 
 app.use(express.json());
 app.use(express.urlencoded({
