@@ -42,4 +42,56 @@ Start the server
 ```bash
   nodemon index.js
 ```
+### Link Heroku
+
+```bash
+   https://web-team-task-3.herokuapp.com/
+ ```  
+## API Reference
+
+#### UPLOAD  FILES
+
+```http
+  POST /upload
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `username`      | `string` | **Required**. username of Person  |
+| `Name`      | `string` | **Required**. Name of a Person   |
+| `password`      | `string` | **Required**. password of a Person    |
+| `phoneno`      | `int` | **Required**. phoneno of Person    |
+#### UPDATE A USER
+
+```http
+  GET /update/${username}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `username`      | `string` | **Required**. username of Person to Update |
+| `Name`      | `string` | **Required**. Name of a Person for Update if not then leave it   |
+| `password`      | `string` | **Required**. password of a Person for Update if not then leave it   |
+| `phoneno`      | `int` | **Required**. phoneno of Person for Update if not then leave it   |
+
+#### GET ALL FILES DETAILS
+
+```http
+  GET /getdetail/${username}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `username`     | `string` | **Required**. username of Person to get Detail  |
+
+
+#### DELETE A USER
+
+```http
+  GET /delete/${username}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `username`      | `string` | **Required**. username of Person to Delete |
 
