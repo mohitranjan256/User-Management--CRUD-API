@@ -3,13 +3,12 @@ const { deleteOne } = require('../model/user');
 const user = require('../model/user')
 const router = express.Router();
 
-router.get('/del',async(req,res) =>{
+router.get('/:username',async(req,res) =>{
 
     try{
-        let search = req.body.username
+        let search = req.params.username
         let result = await user.deleteOne({username : search})
         res.json({result})
- 
         
     }
     catch(error){
