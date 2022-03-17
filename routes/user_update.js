@@ -1,10 +1,10 @@
 const express=require('express');
 const router=express.Router();
 const user = require('../model/user')
-router.get('/update' , async(req,res) =>{
+router.put('/:username' , async(req,res) =>{
 
     try{
-        const username = req.body.username
+        const username = req.params.username
         const Name = req.body.Name
         const password = req.body.password
         const phoneno = req.body.phoneno
