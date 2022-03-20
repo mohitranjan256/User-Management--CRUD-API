@@ -52,7 +52,7 @@ Start the server
 #### REGISTER A USER
 
 ```http
-  POST /upload
+  POST /user_register/register
 ```
 
 | Parameter | Type     | Description                |
@@ -64,7 +64,7 @@ Start the server
 #### UPDATE A USER
 
 ```http
-  GET /update/${username}
+  GET /user_update/${username}
 ```
 
 | Parameter | Type     | Description                       |
@@ -77,7 +77,7 @@ Start the server
 #### GET ALL DETAILS ABOUT A USER
 
 ```http
-  GET /getdetail/${username}
+  GET /user_detail/${username}
 ```
 
 | Parameter | Type     | Description                       |
@@ -88,7 +88,7 @@ Start the server
 #### DELETE A USER
 
 ```http
-  GET /delete/${username}
+  GET /user_del/${username}
 ```
 
 | Parameter | Type     | Description                       |
